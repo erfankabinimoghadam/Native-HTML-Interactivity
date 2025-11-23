@@ -7,7 +7,6 @@ This mini-project showcases how **native HTML features** can handle common inter
 - Toggle content using `<details>` and `<summary>`
 - Tabs using radio buttons and CSS
 - Modal dialogs with `<dialog>`
-- Tooltips with `<abbr>` and title
 - Native form validation with HTML attributes
 
 ## Why Native HTML?
