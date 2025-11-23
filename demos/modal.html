@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h2>Native Modal with &lt;dialog&gt;</h2>
+
+  <button id="openBtn">Open Modal</button>
+
+  <dialog id="modal">
+    <p>This is a native modal dialog.</p>
+    <button id="closeBtn">Close</button>
+  </dialog>
+
+  <script>
+    const modal = document.getElementById('modal');
+    document.getElementById('openBtn').onclick = () => modal.showModal();
+    document.getElementById('closeBtn').onclick = () => modal.close();
+  </script>
+
+  <a href="../index.html">Back</a>
+</body>
+</html>
