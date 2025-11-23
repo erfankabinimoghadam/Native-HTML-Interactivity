@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .tabs input { display: none; }
+    .tabs label {
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .tabs section {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+    #tab1:checked ~ #content1,
+    #tab2:checked ~ #content2,
+    #tab3:checked ~ #content3 {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2>Native Tabs with Radio Buttons</h2>
+  <div class="tabs">
+    <input type="radio" name="tab" id="tab1" checked>
+    <label for="tab1">Tab 1</label>
+
+    <input type="radio" name="tab" id="tab2">
+    <label for="tab2">Tab 2</label>
+
+    <input type="radio" name="tab" id="tab3">
+    <label for="tab3">Tab 3</label>
+
+    <section id="content1">Content for Tab 1</section>
+    <section id="content2">Content for Tab 2</section>
+    <section id="content3">Content for Tab 3</section>
+  </div>
+
+  <a href="../index.html">Back</a>
+</body>
+</html>
